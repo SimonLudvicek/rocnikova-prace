@@ -1,0 +1,324 @@
+<html lang="cs">
+
+<head>
+    <title>Test</title>
+    <meta name="description" content="Webové stránky o hře League of Legends">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://img.pngio.com/download-blue-league-legends-icons-of-symbol-garena-hq-png-image-league-of-legends-icon-png-1600_1600.png">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+        <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+          aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="nav-item active">
+              <a class="nav-link" href="../index.html">Menu
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../hra/index.html">O Hře</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../champs/index.html">Šampioni</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../Lore/index.html">Lore</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="../test/index.html">Test znalostí z LoL</a>
+          </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://eune.leagueoflegends.com/cs-cz/">Oficiální stranky LoL</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    <header class="jumbotron">
+        <div class="container">
+            <h1 class="text-white display-2">Test z League of legends</h1>
+        </div>
+    </header>
+    <main class="container">
+        <form>
+            <p class="alert alert-info otazka">1. Jaký je nejdrahší item dostupný v obcodě v hodnocené hře?</p>
+            <div class="form-group row">
+                <label for="listina" class="col-md-2 col-form-label">Nejdrahší item</label>
+                <div class="col-md-10">
+                    <input type="text" class="form-control" name="listina" id="listina"
+                        placeholder="Napište celý název itemu v angličtině">
+                </div>
+            </div>
+            <p class="alert alert-success odpoved collapse multi-collapse" id="odpoved1"> Rabadon's Deathcap (<a
+                    href="https://cs.wikipedia.org/wiki/Zlat%C3%A1_bula_sicilsk%C3%A1">https://leagueoflegends.fandom.com/wiki/Rabadon%27s_Deathcap</a>
+                )</p>
+            <hr>
+            <p class="alert alert-info otazka">2. V kterém roce vyšla hra League of legends?</p>
+            <div class="form-group row">
+                <label for="hra" class="col-md-2 col-form-label">Založení LoL</label>
+                <div class="col-md-2">
+                    <input type="number" class="form-control" name="hra" id="hra" value="2000"
+                        title="Zadejte správný rok">
+                </div>
+            </div>
+            <p class="alert alert-success odpoved collapse multi-collapse" id="odpoved2">Původní datum vydání je 27.
+                října 2009.
+                (<a
+                    href="https://cs.wikipedia.org/wiki/League_of_Legends">https://cs.wikipedia.org/wiki/League_of_Legends</a>
+                )</p>
+            <hr>
+            <p class="alert alert-info otazka">3. Jaký je nejhranější šampion na topu v patchi 11.11"?
+            </p>
+            <div class="form-group row">
+                <label for="sampion" class="col-md-2 col-form-label">nejhranější šampion</label>
+                <div class="col-md-10">
+                    <select class="form-control" name="sampion" id="sampion">
+                        <option>Darius</option>
+                        <option>Yasuo</option>
+                        <option selected>Sett</option>
+                        <option>Garen</option>
+                    </select>
+                </div>
+            </div>
+            <p class="alert alert-success odpoved collapse multi-collapse" id="odpoved3">Sett
+                (<a
+                    href="https://u.gg/lol/top-lane-tier-list?rank=overall">https://u.gg/lol/top-lane-tier-list?rank=overall</a>
+                )</p>
+
+            <hr>
+            <p class="alert alert-info otazka">4. Zaškrtněte pouze České hráče.</p>
+            <div class="form-group row">
+                <label for="prezident" class="col-md-3 col-form-label">hráči z Česka</label>
+                <div class="col-md-9">
+                    <div class="form-check form-check-inline">
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox" name="ghost" id="ghost" value="Ghost"> Ghost
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox" name="humanoid" id="humanoid"
+                                value="Humanoid"> Humanoid
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox" name="caps" id="caps" value="Caps">
+                            Caps
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox" name="carzzy" id="carzzy" value="Carzzy">
+                            Carzzy
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <p class="alert alert-info odpoved collapse multi-collapse" id="odpoved4">Carzzy, Humanoid
+                (<a href="https://lol.fandom.com/wiki/Carzzy">https://lol.fandom.com/wiki/Carzzy</a>
+                <a href="https://lol.fandom.com/wiki/Humanoid">https://lol.fandom.com/wiki/Humanoid</a>
+                )
+            </p>
+
+            <hr>
+            <p class="alert alert-info otazka">5. Vyberte místo, kde se hrálo MSI v roce 2021.</p>
+            <div class="form-group row">
+                <label for="msi" class="col-md-3 col-form-label">Místo MSI</label>
+                <div class="col-md-9">
+                    <div class="form-check form-check-inline">
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="radio" name="msi" id="vietnam" value="checkedValue">
+                            Vietnam
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="radio" name="msi" id="island" value="checkedValue">
+                            Island
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="radio" name="msi" id="cina" value="checkedValue">
+                            Čína
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="radio" name="msi" id="usa" value="checkedValue"> USA
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <p class="alert alert-success odpoved collapse multi-collapse" id="odpoved5">Island
+                (<a
+                    href="https://lol.fandom.com/wiki/2021_Mid-Season_Invitational">https://lol.fandom.com/wiki/2021_Mid-Season_Invitational</a>
+                )</p>
+
+            <hr>
+            <p class="alert alert-info otazka">6. Co z uvedených možonstí není ultimátní schopnost.
+            </p>
+            <div class="form-group row">
+                <label for="sampion" class="col-md-2 col-form-label">Ultimátní schopnost není</label>
+                <div class="col-md-10">
+                    <select class="form-control" name="sampion" id="sampion">
+                        <option>Dokonalá poprava</option>
+                        <option selected>Ostří předvoje</option>
+                        <option>Časostroj</option>
+                        <option>Prvotřídní ukázka talentu</option>
+                    </select>
+                </div>
+            </div>
+            <p class="alert alert-success odpoved collapse multi-collapse" id="odpoved3">Časostroj
+            </p>
+
+            <div class="form-group row">
+                <div class="offset-sm-2 col-sm-10">
+                    <button type="button" class="btn btn-primary" data-toggle="collapse" data-target=".multi-collapse"
+                        aria-expanded="false"
+                        aria-controls="odpoved1 odpoved2 odpoved3 odpoved4 odpoved5 odpoved6">Řešení testu</button>
+                </div>
+            </div>
+        </form>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+<<<<<<< HEAD
+    <footer class="text-center text-lg-start bg-light text-muted">
+
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+
+            <div class="me-5 d-none d-lg-block">
+                <span>Sociální sítě</span>
+            </div>
+            <div>
+                <a href="https://github.com/SimonLudvicek" target="_blank" class="me-4 text-reset">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.instagram.com/sajmonezz/" target="_blank" class="me-4 text-reset">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://twitter.com/kraaipapagaai" target="_blank" class="me-4 text-reset">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div>
+        </section>
+
+        <section>
+            <div class="container text-center text-md-start mt-5">
+                <div class="row mt-3">
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Čerpací Linky
+                        </h6>
+                        <p>
+                            <a href="https://cs.wikipedia.org/wiki/League_of_Legends" target="_blank"
+                                class="text-reset">Wikipedie</a>
+                        </p>
+                        <p>
+                            <a href="https://eune.leagueoflegends.com/cs-cz/" target="_blank" class="text-reset">League
+                                of Legends</a>
+                        </p>
+                        <p>
+                            <a href="https://lol.fandom.com/wiki/League_of_Legends_Esports_Wiki" target="_blank"
+                                class="text-reset">Leaguepedia</a>
+                        </p>
+                    </div>
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Kontakty
+                        </h6>
+                        <p><i class="fas fa-home me-3"></i> Košetice, 24</p>
+                        <p>
+                            <i class="fas fa-envelope me-3"></i>
+                            simonludvicek@gmail.com
+                        </p>
+                        <p><i class="fas fa-phone me-3"></i> 603 722 505</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+            <p>© 2021 Šimon Ludvíček IT1</p>
+        </div>
+    </footer>
+</body>
+
+</html>
+=======
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+  
+      <div class="me-5 d-none d-lg-block">
+        <span>Sociální sítě</span>
+      </div>
+      <div>
+        <a href="https://github.com/SimonLudvicek" target="_blank" class="me-4 text-reset">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.instagram.com/sajmonezz/" target="_blank" class="me-4 text-reset">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://twitter.com/kraaipapagaai" target="_blank" class="me-4 text-reset">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </div>
+    </section>
+  
+    <section>
+      
+  
+  
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+  
+            <h6 class="text-uppercase fw-bold mb-4">
+              Čerpací Linky
+            </h6>
+            <p>
+              <a href="https://cs.wikipedia.org/wiki/League_of_Legends" target="_blank" class="text-reset">Wikipedie</a>
+            </p>
+            <p>
+              <a href="https://eune.leagueoflegends.com/cs-cz/" target="_blank" class="text-reset">League of Legends</a>
+            </p>
+            <p>
+              <a href="https://lol.fandom.com/wiki/League_of_Legends_Esports_Wiki" target="_blank"
+                class="text-reset">Leaguepedia</a>
+            </p>
+          </div>
+  
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+  
+            <h6 class="text-uppercase fw-bold mb-4">
+              Kontakty
+            </h6>
+            <p><i class="fas fa-home me-3"></i> Košetice, 24</p>
+            <p>
+              <i class="fas fa-envelope me-3"></i>
+              simonludvicek@gmail.com
+            </p>
+            <p><i class="fas fa-phone me-3"></i> 603 722 505</p>
+          </div>
+        </div>
+      
+    </section>
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+      <p>© 2021 Šimon Ludvíček IT1</p>
+    </div>
+  </footer>
+</html>
+>>>>>>> 8a468e73eff68b08de7aa9fa9b02bc4f9d454698
